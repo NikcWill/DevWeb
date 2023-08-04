@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px;
+
+}
+.grid{
+
+    border: solid black;
+    border-radius: 20px;
+    height: 700px;
+    margin: 10px auto;
+    padding: 10px;
+}
+.card{
+    margin: 0px 10px;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    border-radius: 30px;
+    border: solid grey;
+}
+.image img{
+    margin: 10px;
+    border: solid rgb(85, 85, 85);
+    border-radius: 30px;
+ 
+}
+.botao{
+    position: relative;
+    top: -50px;
+    background-color: white;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+}
+.titulo{
+    position: relative;
+    top: -35px;
+    margin: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-weight: bold;
+}
+.descricao{
+    position: relative;
+    top: -35px;
+    margin: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+.preco{
+    padding: 0 15px;
+    align-items: center;
+    position: relative;
+    top: -35px;
+    width: 285px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.avaliacao{
+    position: relative;
+    right: 0px;
+    display: inline;
+    font-size: 15px;
+    
+}
+.preco p{
+    display: inline-block;
+}
