@@ -62,7 +62,7 @@ input[type="text"],
       cursor: pointer;
 }
 
-.face{
+.faceButon{
     background-color: blue;
       color: white;
       padding: 10px 20px;
@@ -71,17 +71,16 @@ input[type="text"],
       margin: 30px;
       width: 200px;
 }
-.x{
+.xButon{
     background-color: black;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-
     margin: 30px;
     width: 200px;
 }
-.email{
+.emailButon{
     background-color: aqua;
     color: white;
     padding: 10px 20px;
@@ -91,13 +90,47 @@ input[type="text"],
     width: 200px;
 }
 
-/* 
-@media(max-width: 1000px){
-    .ladoDireito{
-        background-color: yellow;
-    }
+.face{
+    background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 30px;
+      width: 10px;
 }
-*/
+.x{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 30px;
+    width: 10px;
+}
+.email{
+    background-color: aqua;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 30px;
+    width: 10px;
+}
+.botoesMidia{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: none;
+}
+
+ 
+@media(max-width: px){
+    .botoesMidia{
+    display: none;
+}}
+
 @media(max-width: 600px){
     .ladoEsquerdo{
     }
@@ -107,6 +140,19 @@ input[type="text"],
     }
     .ladoEsquerdo{
         width: 100%;
+    }
+    .botoesMidia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .email, .face, .x{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .botoesMidia form{
+        display: flex;
     }
 } 
 
