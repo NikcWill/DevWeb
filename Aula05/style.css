@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    height: 500px;
+        margin: 20px auto;
+    border: solid grey;
+    text-align: center;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+/* .pai{
+    width: 400px;
+    height: 400px;
+}    */
+
+.ladoEsquerdo{
+    
+    width: 50%;
+    position: relative;
+    left: 0px;
+    
+
+}
+
+.ladoDireito{
+    width: 50%;
+    position: relative;
+    right: 0px;
+    background: linear-gradient(to left, rgba(3, 76, 3, 0.576), rgba(0, 255, 255, 0.606));
+    
+
+}
+.formulario{
+    text-align: left;
+    padding: 10px;
+}
+.titulos{
+    height: 70px;
+    margin: 15px;
+
+}
+input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 15px;
+      font-size: 16px;
+}
+.registrar {
+      background-color: orangered;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+.face{
+    background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 30px;
+      width: 200px;
+}
+.x{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+    margin: 30px;
+    width: 200px;
+}
+.email{
+    background-color: aqua;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 30px;
+    width: 200px;
+}
+
+/* 
+@media(max-width: 1000px){
+    .ladoDireito{
+        background-color: yellow;
+    }
+}
+*/
+@media(max-width: 600px){
+    .ladoEsquerdo{
+    }
+    .ladoDireito{
+        display: none;
+        width: 90%;
+    }
+    .ladoEsquerdo{
+        width: 100%;
+    }
+} 
+
