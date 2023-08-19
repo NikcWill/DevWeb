@@ -26,19 +26,21 @@
     
 }
 .nav-link{
-    color: white;
+    color: silver;
 
 }
 .nav-link:hover{
     transition: .5s;
     padding: 10px 18px;
-    background-color: black;
-    border-radius: 12px 0px;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius: 10px 10px;
+    color: white;
+    font-weight: bold;
 }
 footer{
     background-color: #3e5066;
     text-align: center;
-    color: white;
+    color: silver;
     padding: 10px 0;
     position: fixed;
     bottom: 0%;
@@ -64,12 +66,12 @@ footer{
 .button-top>a:hover{
     font-weight: bold;
     background-color: #364b64;
-    color: white;
+    color: silver;
 }
 
 .bars{
     justify-content: space-between;
-    color: white;
+    color: silver;
     font-size: 15px;
 
 }
@@ -77,18 +79,28 @@ footer{
     margin: 3px;
 
 }
-main{
-    background-color: hwb(0 69% 31%);
+.bars> i:hover{
+    transition: .5s;
+    padding: 10px 18px;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius: 10px 10px;
+    color: white;
+
+}
+body{
+    background-image: url('assets/image/bg1.jpg');
+    background-position: center center;
 }
 .titulos{
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     text-align: center;
+    color: #1d2c3f;
+    background-color: #dddddd4b;
 }
 
 .container{
-    background-color: hwb(0 69% 31%);
-    padding: 10px;
+    padding: 20;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -157,11 +169,12 @@ main{
     border-collapse: collapse;
     border-radius: 10px;
     box-shadow: 0 2px 4px black;
+    color: #1d2c3f;
 }
 
 .table>thead{
     background-color: #3e5066;
-    color: white;
+    color: silver;
     padding: 16px;
     height: 35px;
     
@@ -182,30 +195,36 @@ tr:hover{
     text-align: center;
     margin: 50px auto;
     font-size: 20px;
-   
+    height: 60px;
+       
 }
 .paginacao a{
+    border-radius: 20%;
+    background-color: #364b64;
     padding: 10px 18px;
-    color: #3e5066;
+    color: silver;
 
 }
 .paginacao a.active {
-    background-color: #3e5066;
-    color: white;
+    background-color: silver;
+    color: #1d2c3f;
         
   }
   
-  .paginacao a:hover:not(.active) {
-    background-color: #ddd;
-    border: solid black;
+ .paginacao a:hover:not(.active) {
+    background-color: silver;
+    border-radius: 20%;
+    border: solid #1d2c3f;
+    color: #1d2c3f;
 }
 .cardpg2{
-    background-color: white;
+    background-color: silver;
     margin: 10px 10px;
     width: 300px;
     border-radius: 20px;
     padding: 15px 15px;
     box-shadow: 0 2px 4px black;
+    color: #1d2c3f;
 }
 .cardpg2:hover{
     font-weight: bold;
@@ -243,13 +262,18 @@ tr:hover{
 .about{
     height: 35vh;
 }
-@media(max-width:1120px){
+@media(max-width:1114px){
     .about{
-        height: 60vh;
+        height: 63vh;
     }
 }
-@media(max-width:680px){
+@media(max-width:674px){
     .about{
-        height: 90vh;
+        height: 92vh;
     }
 }
+/*@media(max-width:475px){
+    .about{
+        height: 150vh;
+    }
+}*/
