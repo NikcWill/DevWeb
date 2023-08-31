@@ -41,6 +41,7 @@
     text-align: center;
 }
 .ladoDireito{
+    margin-top: 13px;
     grid-area: ladoDireito;
     display: grid;
     grid-template-columns: 8fr;
@@ -51,8 +52,7 @@
 }
 .cabeca{
     grid-area: cabeca;
-    padding: 10PX;
-   
+    padding: 10px; 
 }
 footer{
     grid-area: footer;
@@ -126,8 +126,12 @@ footer{
     text-align: center;
     padding: 5px;
 }
+.card p{
+    font-size: 8px;
+}
 
 .concentracao{
+    border-radius: 8px;
     grid-area: concentracao;
     background-color: #121212;
     display: grid;
