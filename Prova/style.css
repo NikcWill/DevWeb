@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+header{
+    background: url(assets/imagens/london.jpg);
+    height: 800px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    padding: 10px 2%;
+    justify-content: space-between;
+    width: 100%;
+    color: orangered;
+    font-size: 22px;
+}
+.search{
+    color: grey;
+}
+
+.travel{
+    background-color: white;
+    width: 80%;
+    height: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.travel-options{
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.icon-travel{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+
+.icon-travel:hover{
+    background-color: orangered;
+}
+.travel-form{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 30% 40% 50%;
+    grid-template-areas: 
+    "tituloTravel tituloTravel"
+    "form1 form2"
+    "formBotton formBotton";
+    row-gap: 30%;
+    padding: 10px;
+   
+}
+.tituloTravel{
+    grid-area: tituloTravel;
+    font-weight: bold;
+}
+
+.form1{
+    grid-area: form1;
+    
+}
+.form2{
+    grid-area: form2;
+    
+}
+.formBotton{
+    grid-area: formBotton;
+}
+.formBotton button{
+    color: white;
+    width: 20%;
+    background-color: grey;
+    padding: 3px;
+    min-width: 150px;
+
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40% 40% 100% 100%;
+    grid-template-areas: 
+    "tituloGod tituloGod tituloGod"
+    "descricaoGod descricaoGod descricaoGod"
+    "foto1 foto2 foto3"
+    "foto1 foto4 foto5";
+    padding: 10px;
+    gap: 10px;
+
+}
+.tituloGod{
+    grid-area: tituloGod;
+    background-color: aqua;
+}
+.descricaoGod{
+    grid-area: descricao;
+    background-color: blue;
+}
+.foto1{
+    width: 600px;
+    height: 300px;
+    background-image: url(assets/imagens/cinqueterre.jpg);
+    grid-area: foto1;
+    background-size: 100% 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.foto2{
+    grid-area: foto2;
+    background-color: tomato;
+}
+.foto3{
+    grid-area: foto3;
+    background-color: palevioletred;
+}
+.foto4{
+    grid-area: foto4;
+    background-color: yellow;
+}
+.foto5{
+    grid-area: foto5;
+    background-color: springgreen;
+}
+
+}
